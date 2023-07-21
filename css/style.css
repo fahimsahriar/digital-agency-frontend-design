@@ -1,0 +1,582 @@
+*{
+    list-style: none;
+}
+body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+/* nav bar */
+.nav-container{
+    padding: 10px 40px;
+    position: relative;
+}
+.logo{
+    padding: 5px 5px 5px 30px;
+}
+.logo img{
+    width: 24%;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;   
+}
+.menu ul{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu ul li{
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+}
+.menu ul li a{
+    color: #231f20;
+    display: block;
+    padding:10px;
+}
+.menu ul li a:hover{
+    text-decoration: none;
+}
+.menu ul li:hover{
+    background-color: #EEEEEE;
+    transition: 0.5s;
+}
+.menu ul li ul{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul li ul li{
+    padding-right: 40px;
+}
+.menu ul li ul li{
+    border-radius: 0px;
+    background-color: #eee;
+}
+.menu ul li ul li:hover{
+    border-radius: 20px;
+    transition: 0.1s;
+}
+.checkbtn{
+    font-size: 23px;
+    border: 3px solid #231f20;
+    padding: 7px;
+    border-radius: 27px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 60px;
+    top: 28px;
+    cursor: pointer;
+}
+.bar{
+    display: none;
+}
+.nav-container .bar i:hover{
+    color: #DC143C;
+    border-color: #DC143C;
+}
+
+/* cover section */
+.cover{
+    background-color: #F5F5F5;
+}
+.cover-container{
+    padding:7% 1%;
+    background-image: url("https://dsagencyny.com/wp-content/uploads/2021/01/5ef9125f3ce72151a0024fd0_Graphic-line-02.png");
+    background-position: 115%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size:350px;
+    position: relative;
+    
+}
+.background-text{
+    color: #fff;
+    font-weight: 800;
+    font-size: 22rem;
+    z-index: 0;
+}
+.text-background-inside{
+    position: absolute;
+    top:0;
+}
+.cover-image{
+    width: 450px;
+}
+.cover-heading-inside{
+    padding-top: 20%;
+    padding-left: 20%;;
+}
+.cover-heading h1{
+    font-weight: 800;
+    font-size: 85px;
+}
+.play-btn{
+    padding: 20px;
+    z-index: 2;
+}
+.play-text{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-icon{
+    display: inline;
+    width: 300px;
+}
+.play-icon a{
+    color:#000;
+    font-size: 31px;
+    padding: 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;  
+    background-color: #fff;
+}
+.play-icon a:hover{
+    background-color: #ed284c;
+    color: #fff;
+}
+.play-icon a i{
+    text-align: center;
+}
+.cover-image img{
+    width: 100%;
+}
+.play-text{
+    margin: 10px;
+}
+/* social side bar */
+.social-side{
+    z-index: 4;
+    right: 20px;
+    position: fixed;
+    top:100px;
+    width: 170px;
+}
+.social-side ul{
+    margin: 0;
+    padding:0;
+    float: right;
+}
+.social-side li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tootip{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    display: none;
+}
+.social-side a{
+    text-decoration: none;
+    color:black;
+    width: 40px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%);
+}
+.social-side a:hover{
+    width: 50px;
+    margin-left: -10px;
+    color: #ed284c;
+}
+.social-side li:hover {
+    text-decoration: none;
+}
+.social-side li:hover .tooltip{
+    display: block;
+}
+/* services */
+.services{  
+    background-color:#EA1F50;
+    color: #eee;
+}
+.services .service_box:hover{
+    background-color: #231f20;
+    transition: 0.5s;
+}
+.title{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    padding: 3% 4%; 
+    text-align: center;
+}
+.heading h1{
+    font-weight: 900;
+    font-size: 3.6rem;
+}
+.row{
+    margin: 0 !important;
+}
+.content_1{
+    padding:0 6%;
+}
+.service_box{
+    padding-top:1%;
+    padding-bottom: 8%;
+}
+.inner_box{
+    height: 100%;
+}
+.inner_box .service_icon{
+    width: 60px;
+    float: left;
+}
+.inner_box .service_content{
+    width: 80%;
+    float: left;
+}
+.content_3{
+    padding:2% 5%;
+}
+.service_btn{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3%;
+}
+.s_btn {
+    border: none;
+    font-weight: 700;
+    background-color: #231f20;
+    border-radius: 50px;
+    padding: 16px 25px;
+    color: #eee;
+}
+.s_btn a{
+    text-decoration: none;
+}
+.s_btn:hover{
+    cursor: pointer !important;
+    background-color: #eee;
+    transition: 0.5s;
+    color: #231f20;
+}
+
+/* portfolio */
+.portfolio-text h4{
+    width: fit-content;
+}
+.portfolio-container{
+    padding-bottom:3%; 
+}
+.portfolio-content{
+    position: relative;
+    width: 430px;
+    padding: 0 0 !important;
+    margin: 2% 1%;
+}
+.portfolio-content:hover .portfolio-text{
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;   
+}
+.portfolio-img{
+    display: block;
+    width: 100%;
+    filter: brightness(.6);
+}
+.portfolio-text{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#eee;
+    
+}
+
+/* D&S section */
+.dns{
+    background-image: url(https://dsagencyny.com/wp-content/uploads/2021/01/5f075802950d4119522cda17_AdobeStock_328122418.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 3%;
+}
+.dnscontainer2{
+    margin: 0 6% !important;
+}
+.dns-content{
+    background-color:#662DCE;
+    height: 290px;
+    padding:3% 3%;
+    margin: 1%;
+}
+.dns-content h3{
+    margin:5% 0%;
+    color:#eee;
+    z-index: 2;
+}
+.dns-content p{
+    z-index: 2;
+}
+.dns-content{
+    color:rgb(194, 193, 193);
+    position: relative;
+}
+.numb-div{
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+.numbering{
+    
+    display: inline-block;
+    color: #231f2029;;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+}
+
+/* Testimonials */
+/* .testimonials{
+    padding:3% 0;
+    width: 100%;
+    height: 1200px !important;
+}
+.test-container-inside .item h4{
+    display: block !important;
+    width: 100%;
+    height: auto;
+}
+.name{
+    font-weight: bold;
+    display: block;
+}
+.partner{
+    padding: 5% 0;
+}
+.partner-slider{
+    margin: 0 2% 0 2%;
+}
+.partner-slider .owl-item img{
+    width: 80% !important;
+}
+.partner-slider .owl-theme{
+    margin: 0;
+} */
+/* subcription */
+.subcription{
+    padding: 5%;
+    background-image: url("https://dsagencyny.com/wp-content/uploads/2021/01/Screenshot-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subcription-text .col-md{
+    margin:0;   
+}
+.subcription-text h2{
+    color: #fff;
+    font-weight: 600;
+}
+.subcription-text .in1{
+    padding: 0 8px 0 0;
+    margin:0;   
+}
+.subcription-text .in2{
+    padding: 0 0 0 0;
+    margin:0;   
+}
+.subcription input{
+    width: 100%;
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+    padding-left: 8px;
+    margin-bottom: 5px;
+}
+.subcription-btn{
+    padding-top: 20px;
+}
+.subcription-btn button{
+    float: right;
+    border: none;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* footer */
+.footer-1{
+    background-color: #231F20;
+}
+.footer-title{
+    padding: 2% 0;
+}
+.footer-container{  
+    margin: 0 3%;
+    padding: 1%;
+    color: #fff;
+}
+.footer-main{
+    padding: 2% 0;
+}
+.footer-main .col-md{
+    
+    margin: 1%;
+}
+.footer-main .col-md ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-main h5{
+    font-weight: 700;
+}
+.footer-social a{
+    color: #eee;
+}
+.footer-images .col-md{
+    margin: 2px;
+}
+.footer-images-content:hover .footer-images-text{
+    background: rgba(82, 6, 6, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;   
+}
+.footer-images-content{
+    position: relative;
+    width: 430px;
+    padding: 0 0 !important;
+    margin: 2% 1%;
+}
+.footer-images-img{
+    display: block;
+    width: 100%;
+    filter: brightness(.6);
+}
+.owl-item{
+    width: 180px !important;
+}
+.footer-images-text{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#eee
+}
+.footer-images-text i{
+    margin: 0 5px;
+}
+.bottom-right{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+.credit{
+    background-color: #000000;
+}
+.credit-container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+}
+.footer-3-lang{
+    padding: 0 2px;
+}
+.footer-3-lang a{
+    text-decoration: none;
+    color:#000;
+}
+/* Media Queries */
+@media only screen and (max-width:1192px) {
+    .social-side{
+        display: none;
+    }
+    /* nav */
+    .bar{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        background-color: #DC143C;
+        margin: auto;
+        padding: 50px;
+        display: none;
+    }
+    .showing{
+        display: block !important;
+    }
+    .logo{
+        min-height: 70px;
+        padding: 0;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .menu ul{
+        width: 100%;
+    }
+    .menu ul li{
+        display: block;
+        width: 100%;
+    }
+    .menu ul li a{
+        font-size: 25px;
+        font-weight: 600;
+        padding:5px 5px 5px 20px;
+    }
+    .menu ul li:hover{
+        background-color: #eee;
+        transition: 0.5s;
+    }
+    .menu ul li a.active{
+        background-color: #55595C;
+        color: #eee;
+        transition: 0.5s;
+    }
+    .menu ul li:hover a{
+        color: #231f20;
+    }
+    .menu ul li ul li{
+        left:20px;
+        border-radius: 0px;
+        background-color: #DC143C;
+        color: #55595C;
+    }
+    /* services */
+
+    /* portfolio */
+    .portfolio-content{
+        margin: 2% auto;
+    }
+
+    /* footer */
+    .footer-images-content{
+        width:130px;
+    }
+}
